@@ -9,11 +9,11 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
-      color: #333;
+      background: #f9f9f9; /* Light neutral background */
+      color: #333; /* Dark text for readability */
     }
     header {
-      background: #333;
+      background: #004aad; /* Dominant color: Deep blue for trust */
       color: #fff;
       padding: 1rem 2rem;
       text-align: center;
@@ -22,6 +22,7 @@
       color: #fff;
       margin: 0 1rem;
       text-decoration: none;
+      font-weight: bold;
     }
     .container {
       max-width: 960px;
@@ -29,7 +30,7 @@
       padding: 2rem;
     }
     .hero {
-      background: #e2e2e2;
+      background: #eaf2f8; /* Secondary color: Light blue for calmness */
       padding: 2rem;
       text-align: center;
       margin-bottom: 2rem;
@@ -40,7 +41,7 @@
     }
     .cta-button {
       display: inline-block;
-      background: #333;
+      background: #ff921c; /* Accent color: Vibrant orange for energy */
       color: #fff;
       padding: 1rem 2rem;
       text-decoration: none;
@@ -51,20 +52,22 @@
       margin-bottom: 2rem;
     }
     footer {
-      background: #333;
+      background: #004aad; /* Deep blue footer */
       color: #fff;
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
     }
     footer a {
-      color: #fff;
+      color: #ff921c; /* Accent orange for links */
       text-decoration: underline;
-      margin: 0 0.5rem;
     }
     ul {
       list-style-type: disc;
       padding-left: 20px;
+    }
+    h2 {
+      color: #004aad; /* Deep blue for headings */
     }
   </style>
 </head>
@@ -72,58 +75,70 @@
   <header>
     <h1>ChatCast</h1>
     <nav>
-      <a href="#about">About</a>
+      <a href="#about">About Us</a>
+      <a href="#mission">Mission</a>
       <a href="#features">Features</a>
       <a href="#get-started">Get Started</a>
-      <a href="tos.html">Terms of Service</a>
-      <a href="privacy.html">Privacy Policy</a>
     </nav>
   </header>
 
   <div class="container">
+    
+    <!-- Hero Section -->
     <section class="hero">
-      <h2>Cast Your Voice, Stories, Struggles, Triumphs, Hobbies, or Expertise!</h2>
+      <h2>Transform Conversations Into Professional Videos</h2>
       <p>
-        Chat with our AI and let it transform the convo into professional videocast.
+        Chat with our AI through WhatsApp and watch your stories come to life as professional, interactive multimedia content.
       </p>
       <a class="cta-button" href="#get-started">Get Started</a>
     </section>
 
+    <!-- About Us Section -->
     <section id="about">
-      <h2>About ChatCast</h2>
+      <h2>About Us</h2>
       <p>
-        ChatCast is a global platform that empowers you to share your personal stories, struggles, triumphs, hobbies or expertise with the world. You simply chat with our 
-        AI and it transforms the convo into professional videocast. We take care of the production and publication, distributing your content to popular platforms.
-        Our mission is to democratize podcasting and give everyone a voice. No costly devices, no time consuming post-production work.
+        ChatCast is a global platform that empowers people to share their voices, stories, struggles, and expertise. By chatting with our AI assistant via WhatsApp, users can effortlessly create professional-quality videos enriched with intros, topic-relevant footage, captions, and interactive QR codes that link to games or quizzes.  
+        Our platform simplifies content creation and allows anyone to connect with global audiences by turning everyday conversations into impactful multimedia experiences.
       </p>
     </section>
 
+    <!-- Mission Section -->
+    <section id="mission">
+      <h2>Our Mission</h2>
+      <p>
+        At ChatCast, our mission is to democratize podcasting and video creation by giving everyone the tools they need to share their stories. We believe in empowering individuals from all walks of life to cast their voices without barriers like costly equipment or complex production processes. Everyone deserves a platform to inspire and engage the world.
+      </p>
+    </section>
+
+    <!-- Features Section -->
     <section id="features">
       <h2>Features</h2>
       <ul>
-        <li>Interactive chat with our AI</li>
-        <li>Conversion of your chat into a professional videocast</li>
-        <li>Complete production and publication on leading platforms</li>
-        <li>User-friendly and intuitive interface</li>
-        <li>Secure and private user experience</li>
+        <li>Interactive chat with our AI through WhatsApp</li>
+        <li>Professional video creation with intros and relevant footage</li>
+        <li>Interactive multimedia content with QR codes linking to games or quizzes</li>
+        <li>Seamless sharing to leading platforms</li>
+        <li>User-friendly interface with secure and private experience</li>
       </ul>
     </section>
 
+    <!-- Get Started Section -->
     <section id="get-started">
       <h2>Get Started</h2>
       <p>
-        Ready to share your story with the world? Join ChatCast today, chat with our AI, and see your words come alive in a professional videocast.
+        Ready to share your story with the world? Join ChatCast today! Chat with our AI on WhatsApp and see your words come alive in professional videos.
       </p>
       <a class="cta-button" href="signup.html">Sign Up Now</a>
     </section>
+
   </div>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 ChatCast. All rights reserved.</p>
-    <p>
-      <a href="tos.html">Terms of Service</a> | 
-      <a href="privacy.html">Privacy Policy</a>
-    </p>
+    <p><a href="tos.html">Terms of Service</a> | 
+       <a href="privacy.html">Privacy Policy</a></p>
   </footer>
+
 </body>
 </html>
