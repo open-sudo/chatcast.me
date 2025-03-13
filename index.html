@@ -1,130 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ChatCast - Transform Conversations into Videos</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #004aad;
-      color: #fff;
-      padding: 1rem 2rem;
-      text-align: center;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
-    .hero {
-      background: #eaf2f8;
-      padding: 2rem;
-      text-align: center;
-      margin-bottom: 2rem;
-      border-radius: 4px;
-    }
-    .hero h2 {
-      margin-top: 0;
-    }
-    .cta-button {
-      display: inline-block;
-      background: #ff921c;
-      color: #fff;
-      padding: 1rem 2rem;
-      text-decoration: none;
-      border-radius: 4px;
-      margin-top: 1rem;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    footer {
-      background: #004aad;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
-    footer a {
-      color: #ff921c; 
-      text-decoration: underline; 
-    }
-    ul {
-      list-style-type: disc; 
-      padding-left: 20px; 
-    }
-    h2 {
-      color: #004aad; 
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>ChatCast</h1>
-    <nav>
-      <a href="#about">About Us</a>
-      <a href="#features">Features</a>
-      <a href="#get-started">Get Started</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/favicon.png" />
 
-  <div class="container">
-    
-    <!-- Hero Section -->
-    <section class="hero">
-      <h2>Effortless Video Creation for Everyone</h2>
-      <p>ChatCast transforms your WhatsApp conversations into professional, interactive media content that engages and inspires.</p>
-      <a class="cta-button" href="https://wa.me/12509440946">Get Started</a>
-    </section>
+    <title>ChatCast</title>
+    <meta name="description" content="ChatCast | Effortless Video Creation for Everyone" />
 
-    <!-- About Us Section -->
-    <section id="about">
-      <h2>About Us</h2>
-      <p>ChatCast turns everyday conversations into professional, interactive media content. By chatting with our AI assistant through WhatsApp, users can effortlessly create videos that are polished, engaging, and ready to share on leading platforms. Whether you're sharing personal stories or professional insights, ChatCast helps you connect with audiences worldwide.</p>
-    </section>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wdth,wght@75..125,100..800&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet" />
 
-    <!-- Features Section -->
-    <section id="features">
-      <h2>Features</h2>
-      <ul>
-        <li>AI-powered video creation from WhatsApp chats</li>
-        <li>Interactive media content tailored to your needs</li>
-        <li>Seamless sharing across platforms for maximum reach</li>
-        <li>User-friendly interface with no technical expertise required</li>
-        <li>Secure and private experience for peace of mind</li>
-      </ul>
-    </section>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <!-- Get Started Section -->
-    <section id="get-started">
-      <h2>Get Started</h2>
-      <p>Ready to bring your stories to life? Join ChatCast today! Chat with our AI on WhatsApp and watch your words transform into professional videos in minutes.</p>
-      <a class="cta-button" href="https://wa.me/12509440946">Get Started</a>
-    </section>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="#" class="nav-logo"><img src="./assets/images/logo.svg" width="112" alt="" /></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#features" class="nav-link">Features</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Videocast Samples</a>
+          </li>
+          <li class="nav-item nav-cta">
+            <a href="#" class="nav-link">Call Back</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__image">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/images/social-icons-desktop-1x.webp 1x, ./assets/images/social-icons-desktop-2x.webp 2x" type="image/webp" />
+            <source media="(min-width: 768px)" srcset="./assets/images/social-icons-desktop-1x.png 1x, ./assets/images/social-icons-desktop-2x.png 2x" type="image/png" />
+            <source srcset="./assets/images/social-icons-mobile-1x.webp 1x, ./assets/images/social-icons-mobile-2x.webp 2x" type="image/webp" />
+            <source srcset="./assets/images/social-icons-mobile-1x.png 1x, ./assets/images/social-icons-mobile-2x.png 2x" type="image/png" />
+            <img src="./assets/images/social-icons-mobile-1x.png" alt="Social Icons" />
+          </picture>
+        </div>
+        <a href="#" class="hero__button">Get Started</a>
+        <div class="hero__content">
+          <h1 class="hero__title">Effortless Video Creation for Everyone</h1>
+          <p class="hero__subtitle">ChatCast transforms your <span class="highlight">WhatsApp</span> conversations into professional, interactive media content that engages and inspires.</p>
+        </div>
+      </section>
+      <section class="video-section">
+        <div class="video-container">
+          <video poster="./assets/images/thumbnail.webp" id="video" class="video" src="your-video.mp4"></video>
 
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 ChatCast. All rights reserved.</p>
-    <p><a href="#about">About Us</a> | 
-       <a href="#features">Features</a> | 
-       <a href="tos.html">Terms of Service</a> | 
-       <a href="privacy.html">Privacy Policy</a></p>
-  </footer>
-
-</body>
+          <button id="playButton" class="play-button">
+            <img src="./assets/images/video-button.svg" alt="" />
+          </button>
+        </div>
+      </section>
+      <section class="features-section" id="features">
+        <div class="features">
+          <h2 class="features__title">Features</h2>
+          <div class="features__grid">
+            <div class="feature__card">
+              <div class="feature__icon">
+                <img src="./assets/images/Cpu.svg" alt="" />
+              </div>
+              <p>AI-Powered Videocast Creation & Production: transform WhatsApp chats into engaging videocasts.</p>
+            </div>
+            <div class="feature__card">
+              <div class="feature__icon">
+                <img src="./assets/images/Social-media.svg" alt="" />
+              </div>
+              <p>Collaborative Storytelling: Work with friends to create fantastic narratives together.</p>
+            </div>
+            <div class="feature__card">
+              <div class="feature__icon">
+                <img src="./assets/images/Video-marketing.svg" alt="" />
+              </div>
+              <p>Effortless Project Management: Create and manage multiple videocasts with ease.</p>
+            </div>
+            <div class="feature__card">
+              <div class="feature__icon">
+                <img src="./assets/images/Idea.svg" alt="" />
+              </div>
+              <p>Intuitive Input Options: No technical expertise required—simply scan, speak, or type.</p>
+            </div>
+            <div class="feature__card">
+              <div class="feature__icon">
+                <img src="./assets/images/Feedback.svg" alt="" />
+              </div>
+              <p>Interactive Media Experiences: Deliver dynamic, engaging content tailored to captivate your audience.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__header">
+          <h2 class="about__title">About Us</h2>
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/images/about-us-desktop-1x.webp 1x, ./assets/images/about-us-desktop-2x.webp 2x" type="image/webp" />
+            <source media="(min-width: 768px)" srcset="./assets/images/about-us-desktop-1x.jpg 1x, ./assets/images/about-us-desktop-2x.jpg 2x" type="image/jpg" />
+            <source srcset="./assets/images/about-us-mobile-1x.webp 1x, ./assets/images/about-us-mobile-2x.webp 2x" type="image/webp" />
+            <source srcset="./assets/images/about-us-mobile-1x.jpg 1x, ./assets/images/about-us-mobile-2x.jpg 2x" type="image/jpg" />
+            <img class="about__img" src="./assets/images/about-us-mobile-1x.jpg" alt="Social conversations" />
+          </picture>
+        </div>
+        <hr class="about__divider" />
+        <div class="about__content">
+          <h3>ChatCast turns everyday conversations into professional, interactive media content.</h3>
+          <p>
+            By chatting with our AI assistant through WhatsApp, users can effortlessly create videos that are polished, engaging, and ready to share on leading platforms. Whether you're sharing
+            personal stories or professional insights, ChatCast helps you connect with audiences worldwide.
+          </p>
+        </div>
+      </section>
+      <section class="samples">
+        <div class="swiper">
+          <div class="samples__header">
+            <h2>Videocast Samples</h2>
+            <div class="swiper__buttons">
+              <div class="swiper-prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="36" viewBox="0 0 64 36" fill="none">
+                  <path d="M17.5528 0.447266L20.4035 3.29816L7.7177 15.9841H64V20.0159H7.7177L20.4035 32.7017L17.5528 35.5526L3.8147e-06 17.9999L17.5528 0.447266Z" fill="#1E1E1E" />
+                </svg>
+              </div>
+              <div class="swiper-next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="36" viewBox="0 0 64 36" fill="none">
+                  <path d="M46.4472 0.447266L43.5965 3.29816L56.2823 15.9841H0V20.0159H56.2823L43.5965 32.7017L46.4472 35.5526L64 17.9999L46.4472 0.447266Z" fill="#1E1E1E" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <!-- Slider main container -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="./assets/images/slide-1-1x.webp 1x, ./assets/images/slide-1-2x.webp 2x" type="image/webp" />
+                <source srcset="./assets/images/slide-1-1x.jpg 1x, ./assets/images/slide-1-2x.jpg 2x" type="image/jpg" />
+                <img src="./assets/images/slide-1-1x.jpg" alt="" />
+              </picture>
+              <h3>Lorem Ipsum is simply dummy</h3>
+              <p>Lorem Ipsum has been</p>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="./assets/images/slide-2-1x.webp 1x, ./assets/images/slide-2-2x.webp 2x" type="image/webp" />
+                <source srcset="./assets/images/slide-2-1x.jpg 1x, ./assets/images/slide-2-2x.jpg 2x" type="image/jpg" />
+                <img src="./assets/images/slide-2-1x.jpg" alt="" />
+              </picture>
+              <h3>Lorem Ipsum is simply dummy</h3>
+              <p>Lorem Ipsum has been</p>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="./assets/images/slide-3-1x.webp 1x, ./assets/images/slide-3-2x.webp 2x" type="image/webp" />
+                <source srcset="./assets/images/slide-3-1x.jpg 1x, ./assets/images/slide-3-2x.jpg 2x" type="image/jpg" />
+                <img src="./assets/images/slide-3-1x.jpg" alt="" />
+              </picture>
+              <h3>Lorem Ipsum is simply dummy</h3>
+              <p>Lorem Ipsum has been</p>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="./assets/images/slide-4-1x.webp 1x, ./assets/images/slide-4-2x.webp 2x" type="image/webp" />
+                <source srcset="./assets/images/slide-4-1x.jpg 1x, ./assets/images/slide-4-2x.jpg 2x" type="image/jpg" />
+                <img src="./assets/images/slide-4-1x.jpg" alt="" />
+              </picture>
+              <h3>Lorem Ipsum is simply dummy</h3>
+              <p>Lorem Ipsum has been</p>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="./assets/images/slide-1-1x.webp 1x, ./assets/images/slide-1-2x.webp 2x" type="image/webp" />
+                <source srcset="./assets/images/slide-1-1x.jpg 1x, ./assets/images/slide-1-2x.jpg 2x" type="image/jpg" />
+                <img src="./assets/images/slide-1-1x.jpg" alt="" />
+              </picture>
+              <h3>Lorem Ipsum is simply dummy</h3>
+              <p>Lorem Ipsum has been</p>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="./assets/images/slide-2-1x.webp 1x, ./assets/images/slide-2-2x.webp 2x" type="image/webp" />
+                <source srcset="./assets/images/slide-2-1x.jpg 1x, ./assets/images/slide-2-2x.jpg 2x" type="image/jpg" />
+                <img src="./assets/images/slide-2-1x.jpg" alt="" />
+              </picture>
+              <h3>Lorem Ipsum is simply dummy</h3>
+              <p>Lorem Ipsum has been</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="started">
+        <div class="started__wrapper">
+          <div class="started__content">
+            <h2>Get Started</h2>
+            <p>Ready to bring your stories to life?</p>
+            <p>Join ChatCast today! Chat with our AI on WhatsApp and watch your words transform into professional videos in minutes.</p>
+          </div>
+          <a href="#" class="cta-button">Sign Up Now</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">© 2025 ChatCast. All rights reserved.</p>
+      <nav class="footer__nav">
+        <a href="#" class="footer__link">Help</a>
+        <a href="#" class="footer__link">Features</a>
+        <a href="#" class="footer__link">Terms of Service</a>
+        <a href="#" class="footer__link">Privacy Policy</a>
+      </nav>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
